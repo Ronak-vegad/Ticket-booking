@@ -81,12 +81,12 @@ Current bookings: [Ronak]
 
 Clone this repository:
 
-git clone https://github.com/<your-username>/air-tarsai-booking.git
+git clone https://github.com/Ronak-vegad/Ticket-booking.git
 
 
 Navigate into the project folder:
 
-cd Tikcet-booking
+cd Ticket-booking
 
 
 Run the program:
