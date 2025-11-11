@@ -56,13 +56,13 @@ func main() {
 			}
 		} else {
 			if !isValidName {
-				fmt.Println("Your name is not a valid!")
+				fmt.Println("Your name is not a valid, Your name must be contain more than or equal to 2 words!")
 			} else if !isValidEmail {
 				fmt.Println("Your email is not a valid!")
 			} else {
 				fmt.Println("Ticket Numbers Are Not valid")
 			}
-		}
+		}	
 
 	}
 }
