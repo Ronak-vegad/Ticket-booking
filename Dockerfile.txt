@@ -1,21 +1,21 @@
-# Use Go 1.25.3 as base image
+# Use Go 1.25.3 (or newer)
 FROM golang:1.25.3
 
-# Set working directory
+# Set working directory inside container
 WORKDIR /app
 
-# Copy go.mod and go.sum first, then download dependencies
+# Copy go.mod and go.sum first to cache dependencies
 COPY go.mod go.sum ./
 RUN go mod download
 
-# Copy the rest of your code
+# Copy the rest of your source code
 COPY . .
 
-# Build the Go app
+# Build the binary
 RUN go build -o app .
 
-# Expose port 8080 (Render sets $PORT)
+# Expose port (Render assigns $PORT dynamically)
 EXPOSE 8080
 
-# Run your app
+# Run your Go app
 CMD ["./app"]
