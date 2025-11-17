@@ -15,6 +15,7 @@ func main() {
 	for {
 
 		fmt.Println("--------------- Welcome to Air Tarsai ---------------")
+		fmt.Println("Plz Locked in your Tickets Because You are Gonna Achieve the Heaven With us!")
 
 		fmt.Print("Enter your first name: ")
 		fmt.Scan(&firstName)
@@ -62,7 +63,7 @@ func main() {
 			} else {
 				fmt.Println("Ticket Numbers Are Not valid")
 			}
-		}	
+		}
 
 	}
 }

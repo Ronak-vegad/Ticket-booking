@@ -1,0 +1,11 @@
+
+
+services:
+  - type: web
+    name: ticket-booking
+    env: go
+    buildCommand: go build -tags netgo -ldflags '-s -w' -o app
+    startCommand: ./app
+    envVars:
+      - key: GO_VERSION
+        value: 1.25.3
